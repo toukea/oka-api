@@ -43,6 +43,8 @@ class AppKernel extends Kernel
 		$bundles = array(
 			// ...
 			new Oka\ApiBundle\OkaApiBundle(),
+			new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(), // Added if using request auditer component, then `oka_api.request_auditer.enabled` configuration value must be at `true`.
+			
 		);
 		
 		// ...
